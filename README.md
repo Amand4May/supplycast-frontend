@@ -1,75 +1,131 @@
-# React + TypeScript + Vite
+# 📦 SupplyCast Web | Dashboard Logístico Preditivo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **SupplyCast Web** é uma interface moderna e responsiva desenvolvida para transformar previsões geradas por Inteligência Artificial em ações operacionais estratégicas.
 
-Currently, two official plugins are available:
+Construído com **React.js**, **TypeScript** e **Tailwind CSS**, o dashboard permite que analistas de *Supply Chain* monitorem riscos de ruptura de estoque, acompanhem previsões de demanda e tomem decisões preventivas antes que gargalos afetem a operação.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 👨‍💻 Desenvolvedora
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Amanda Mayumi Sato de Miranda**
+  - GitHub: https://github.com/Amand4May
+- **Marco Túlio Duenas**
+  - GitHub: https://github.com/marco-rocks
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Principais
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React.js
+- TypeScript
+- Tailwind CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Bibliotecas e Ferramentas
 
+- Axios
+- React Router DOM
+- Recharts *(ou Chart.js)*
+- Lucide React
+
+---
+
+## ✨ Funcionalidades
+
+- 📊 **Dashboard Inteligente**
+  - Visualização centralizada dos principais indicadores logísticos.
+
+- ⚠️ **Alertas de Ruptura**
+  - Identifica automaticamente produtos com alto risco de falta de estoque utilizando previsões da IA.
+
+- 📈 **Projeção de Demanda**
+  - Gráficos interativos comparando a evolução do estoque com a previsão de consumo.
+
+- 📦 **Monitoramento de SKUs**
+  - Exibição detalhada dos produtos, estoque atual, previsão de esgotamento e nível de risco.
+
+- 💰 **KPIs em Tempo Real**
+  - Indicadores como:
+  - Produtos em risco
+  - Precisão do modelo preditivo
+  - Custo potencial evitado
+  - Nível geral de abastecimento
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+supplycast-web/
+├── package.json
+├── tailwind.config.js
+├── src/
+│   ├── main.tsx              # Entrada da aplicação
+│   ├── App.tsx               # Estrutura principal e rotas
+│   ├── assets/               # Imagens e arquivos estáticos
+│   ├── components/           # Componentes reutilizáveis
+│   ├── pages/                # Páginas do sistema
+│   ├── services/             # Comunicação com a API
+│   ├── hooks/                # Hooks personalizados
+│   ├── types/                # Tipagens TypeScript
+│   └── utils/                # Funções auxiliares
+└── ...
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Instalação
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone o repositório:
 
+```bash
+git clone https://github.com/Amand4May/supplycast-web.git
 ```
+
+Acesse a pasta do projeto:
+
+```bash
+cd supplycast-web
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔐 Variáveis de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+VITE_API_URL=http://localhost:3333
+```
+
+| Variável | Descrição |
+|----------|-----------|
+| `VITE_API_URL` | URL base da API do SupplyCast |
+
+---
+
+## 🎯 Objetivo
+
+O objetivo do SupplyCast é reduzir perdas causadas por rupturas de estoque utilizando modelos preditivos de Machine Learning, oferecendo uma visualização intuitiva dos riscos e apoiando a tomada de decisão em operações logísticas.
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins acadêmicos e de portfólio.
+
+© 2026 SupplyCast. Todos os direitos reservados.
