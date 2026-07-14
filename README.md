@@ -6,7 +6,7 @@ Construído com **React.js**, **TypeScript** e **Tailwind CSS**, o dashboard per
 
 ---
 
-## 👨‍💻 Desenvolvedora
+## 👨‍💻 Desenvolvedores
 
 - **Amanda Mayumi Sato de Miranda**
   - GitHub: https://github.com/Amand4May
